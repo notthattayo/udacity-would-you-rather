@@ -1,38 +1,193 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+.loader {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+  margin-top: 10%;
+}
+/*Login Styles*/
+.login-page {
+  background-color: lightslategray;
+  background-image: url("https://media.wired.com/photos/5c9ba67d1e34481170ef2bcd/191:100/w_1508,h_789,c_limit/Culture_Matrix_RedPillBluePill-1047403844.jpg");
+  height: 100vh;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-page h1 {
+  color: lightsteelblue;
+  font-size: 3em;
+  padding-top: 5%;
+}
+.login-card {
+  margin: 2px auto;
+  background-color: whitesmoke;
+  max-width: 400px;
+  border-radius: 4px;
+  padding: 10px;
+  padding-bottom: 40px;
+}
+.login-card p {
+  font-size: 1.3em;
+}
+.login-card select {
+  height: 40px;
+  width: 80%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.login-card button {
+  font-size: 1.3em;
+  border: none;
+  background-color: rgb(34, 35, 36);
+  display: block;
+  border-radius: 2px;
+  padding: 8px;
+  margin: 20px auto;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.dashboard {
+  color: white;
+}
+.navbar {
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar_navigation a {
+  text-decoration: none;
+  color: white;
+  padding-left: 20px;
+}
+.navbar_userInfo {
+  display: flex;
+  color: white;
+  justify-content: flex-end;
+  margin-right: 4%;
+  margin-top: 2%;
+}
+.navbar_userInfo p {
+  margin-right: 2%;
+}
+.navbar_userInfo button {
+  background-color: rgb(204, 45, 17);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.dashboard_tabs {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2%;
+}
+.dashboard_tabs p {
+  border: 1px solid lightskyblue;
+  padding: 20px;
+  cursor: pointer;
+}
+.dashboard_questions {
+  margin: 2% auto;
+  max-width: 80vw;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.question_row {
+  margin-top: 2em;
+  border: 1px lightskyblue solid;
+}
+.question_row img {
+  width: 200px;
+  height: 200px;
+}
+.question_row a {
+  text-decoration: none;
+}
+.question_row a button {
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  background-color: limegreen;
+  font-size: 1.2em;
+  margin-bottom: 2em;
+  cursor: pointer;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+.question_detail {
+  color: white;
+  margin: 2% auto;
+  max-width: 300px;
+}
+.question_detail img {
+  height: 150px;
+  width: 150px;
+  margin-bottom: 2em;
+}
+.btn {
+  height: 30px;
+  font-size: 1em;
+  width: 200px;
+  margin-top: 3%;
+}
+.active-btn {
+  background-color: limegreen;
+  border: none;
+  border-radius: 4px;
+}
+.poll-results {
+  margin: 5% 0;
+  padding: 10px;
+  border: white solid 1px;
+}
+.winner {
+  border: limegreen solid 1px;
+  background-color: green;
+}
+
+.add-poll {
+  max-width: 300px;
+  margin: 5% auto;
+  color: white;
+  border: white solid 2px;
+  padding: 20px;
+}
+
+.add-poll input {
+  width: 100%;
+  height: 25px;
+}
+
+.add-poll button {
+  margin-top: 10%;
+  background-color: limegreen;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  width: 50%;
+}
+.leaderboard {
+  max-width: 300px;
+  margin: 5% auto;
+  padding: 5%;
+  color: white;
+  border: white solid 2px;
+}
+.leaderboard img {
+  width: 100%;
+}
+.error-page {
+  max-width: 500px;
+  min-height: 100vh;
+}
+
+.selected {
+  background-color: darkslateblue;
+  color: white;
 }
